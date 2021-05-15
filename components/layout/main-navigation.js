@@ -14,10 +14,13 @@ const MainNavigation = () => {
       <nav>
         <ul>
           <li>
-            <Link href='/posts'>Posts</Link>
+            <Link href='/projects'>PROJECTS</Link>
           </li>
           <li>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/resume'>MY_RESUME</Link>
+          </li>
+          <li>
+            <Link href='/contact'>CONTACT</Link>
           </li>
         </ul>
       </nav>

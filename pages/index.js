@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Hero from '../components/home-page/hero'
-import FeaturedPosts from '../components/home-page/featured-posts'
+import FeaturedProjects from '../components/home-page/featured-projects'
 import { getFeaturedPosts } from '../lib/posts-util'
 
 
@@ -12,11 +12,11 @@ const HomePage = (props) => {
         <title>Welcome to Chih-Hao's Portfolio</title>
         <meta 
           name='description'
-          content='I post about mobile and web development.'
+          content='I post about my projects, and mobile and web development.'
         />
       </Head>
       <Hero />
-      <FeaturedPosts 
+      <FeaturedProjects 
         posts={props.posts}
       />
     </>
