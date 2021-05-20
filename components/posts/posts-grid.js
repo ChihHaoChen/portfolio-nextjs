@@ -1,4 +1,4 @@
-import PostItem from './post-item'
+import ProjectItem from './project-item'
 import classes from './posts-grid.module.css'
 
 const PostsGrid = (props) => {
@@ -8,7 +8,7 @@ const PostsGrid = (props) => {
     <ul className={classes.grid}>
       {
         posts.map(post => 
-          <PostItem 
+          <ProjectItem 
             key={post.slug}
             post={post} 
           />
