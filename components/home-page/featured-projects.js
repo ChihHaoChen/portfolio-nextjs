@@ -5,7 +5,7 @@ import { Apple } from '@styled-icons/boxicons-logos/Apple'
 import { Apps } from '@styled-icons/remix-fill/Apps'
 
 
-const FeaturedPosts = (props) => {
+const FeaturedPosts = ({ posts }) => {
   return (
     <SectionWrapper>
       <StyledTitle>Projects</StyledTitle>
@@ -39,7 +39,7 @@ const FeaturedPosts = (props) => {
         </StyledTagContainer>
       </StyledTagGroupDiv>
       <PostsGrid 
-        posts = {props.posts}
+        posts={posts}
       />
     </SectionWrapper>
   )
