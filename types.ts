@@ -37,7 +37,8 @@ export interface Education {
 export interface Project {
   id: number;
   name: string;
-  description: string;
+  description: string[];
+  summary: string[];
   image_path: string;
   deployed_url: string;
   github_url: string;

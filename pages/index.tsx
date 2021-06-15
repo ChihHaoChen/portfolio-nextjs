@@ -24,7 +24,7 @@ const landing = ({ BASE_URL }) => {
       </Head>
      
       <h5 className="my-3 text-base font-medium">
-        I am currently working as a full-stack developer. I have 2+ years of experience in Web Development.
+        I am currently a full-stack developer working on web/mobile apps, and passionate about using technologies with clean code and robust architectures for inspirational services.
       </h5>
       <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 " style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer</h6>
@@ -37,7 +37,7 @@ const landing = ({ BASE_URL }) => {
           {
             services.map((service, key) => (
               <motion.div
-                className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-dark-200 md:col-span-1"
+                className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-black-200 md:col-span-1"
                 key={key}
                 variants={fadeInUp}
               >

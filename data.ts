@@ -1,41 +1,40 @@
 import { RiComputerLine } from "react-icons/ri"
 import { FaServer } from 'react-icons/fa'
-import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
-import { MdDeveloperMode } from 'react-icons/md'
+import { AiOutlineAntDesign, AiOutlineApi, AiFillApple, AiOutlineCloudServer } from 'react-icons/ai'
 import { BsCircleFill } from 'react-icons/bs'
 import { Education, Experience, Project, Service, Skill } from "./types";
 
 export const services: Service[] = [
   {
     title: "Frontend Development",
-    about: "I can build a beautiful and scalable SPA using <b>HTML</b>, <b>CSS</b>, <b>Vue.js</b> and <b>React.js</b>",
+    about: "I develop beautiful and scalable SPA web apps with <b>HTML</b>, <b>CSS</b>, <b>Vue.js</b> and <b>React.js</b>, also use <b>Next.js</b> for server-side-rendering and SEO.",
     Icon: RiComputerLine,
   },
   {
     title: "Backend Development",
-    about: "I can handle both relational and non-relation database, server, API with <b>Express</b>, <b>Apollo</b> and etc.",
+    about: "I can employ both relational and non-relation database for either the monolithic or recent micro-services architectures.",
     Icon: FaServer,
   },
   {
     title: "API Development",
-    about: "I can develop robust REST and GraphQL API with <b>Node.js</b> and <b>Golang</b>.",
+    about: "I develop robust REST and GraphQL API with <b>Node.js</b> and <b>Golang</b>.",
     Icon: AiOutlineApi,
   },
   {
-    title: "Competitive Coder",
-    about: "I love coding.",
-    Icon: MdDeveloperMode,
+    title: "DevOps",
+    about: "Knowing the procedure for deployment from simple front-end apps to those with complex micro-services architecutres, including CI/CD.",
+    Icon: AiOutlineCloudServer,
   },
   {
-    title: "UI/UX Designer",
-    about: "I can design a stunning user interface with <b>Figma</b>",
+    title: "Mobile Apps",
+    about: "I enjoy coding iOS apps with <b>UIKit</b>, <b>SwiftUI</b> and <b>Combine</b>.",
+    Icon: AiFillApple,
+  },
+  {
+    title: "UI/UX Design",
+    about: "Currently learning how to use <b>Figma</b> for developing the UI/UX for prototypes.",
     Icon: AiOutlineAntDesign,
   },
-  {
-    title: "Kendo Player",
-    about: "I love how Kendo riches my life.",
-    Icon: RiComputerLine,
-  }
 ]
 
 
@@ -166,9 +165,20 @@ export const projects: Project[] = [
   {
     id: 0,
     name: 'MyEscrow',
-    description: 'An web app for real estates escrow platform',
+    description: [
+      'A web app for real estates escrow platform. The front-end is developed with React.js for responsive interaction and Next.js for multi-language support. The UI/UX is based on the popular content management system - Monday.com.',
+      'Due to scalability considerations, a micro-services architecture is employed to separate authentication and content management. Therefore, the database sets for users and tasks are separated for easier management. Furthermore, to support complicated operations of nested objects in table, GraphQL is used for API endpoint.',
+      'The whole system has been deployed in Microsoft Azure with CI/CD support.'
+    ],
+    summary: [
+      'React.js and Next.js for front-end;',
+      'Node.js with Typescript for back-end development;',
+  'Employing both non-relational - MongoDB and relational database - PostgreSQL;',
+      'Micro-serverices as the backbone of the system with GraphQL API;',
+      'Deployed in Cloud, and supporting CI/CD.'
+    ],
     image_path: '/images/projects/myEscrow.png',
-    deployed_url: 'http://20.197.110.141/main',
+    deployed_url: 'http://20.197.110.141/',
     github_url: 'na',
     category: ['Web'],
     tech_stack: ['React.js', 'Next.js', 'Node.js', 'Typescript', 'PostgreSQL', 'Microsoft Azure', 'Kubernetes']
@@ -176,7 +186,16 @@ export const projects: Project[] = [
   {
     id: 1,
     name: 'My Portfolio - 2020 version',
-    description: 'My portfolio in 20202, deployed in GitHub. The whole portfolio has been developed with VueJS which allows me to separate the backend database in JSON format from its front-end. In addition, all the images and PDF documents are stored in AWS S3 for easier access.',
+    description: [
+      "This project is developed mainly with Vue.js. The generated static HTML files are deployed in GitHub. My initial purpose in building this website with JS is to separate the front-end development from the back-end database. Thus anyone can reuse my repository to build up their portfolio website by configuring their API calls and populating their back-end database.", 
+      "The database is in JSON format deployed in Firebase, while all the images and PDF files are stored in Amazon S3. Once the API data gets fetched, Vuex, a well-known framework for state management, is exploited to mutate the state variables associated with the database data. The Nuxt framework has been embedded in this repository for SPA (Single Page Application). Finally, as for the UI components, Vuetify is used for the material design of this portfolio side-project. This website is also compatible with popular browsers in mobile devices."
+    ],
+    summary: [
+      'Using Vue.js for front-end;',
+      'Employing Google Firebase to store JSON format data;',
+      'Storing the associated files, including PDF files and images on AWS S3;',
+      'Nuxt.js for SPA, and Vuex to manage the associated states variables.'
+    ],
     image_path: '/images/projects/portfolioVue.jpg',
     deployed_url: 'https://chihhaochen.github.io/',
     github_url: 'https://chihhaochen.github.io/portfolioVue/',
@@ -186,7 +205,17 @@ export const projects: Project[] = [
   {
     id: 2,
     name: 'News Client',
-    description: 'This app is inspired by the most udpated App Store for iOS devices. By setting proper auto-layout constraints and anchors of the components, this app is implmented without storyboard.',
+    description: [
+      "The original purpose of this project is to extend the previous work on a mockup of Apple abpp Store. This App makes API requests from News API that offers news articles and headlines from over 30000 sources. Therefore the reason I chose this topic is that not only can I hone my skills in iOS application development but keep a close eye to the things around the world.",
+      "Later I found that even though there are quite many Apps offering News service, I still do not see a good enough App to read news articles in different languages. Therefore I intend to continue this project to make it a news client App for polyglots so that they can read and save the articles in their journeys of learning languages."
+    ],
+    summary: [
+      'Whole layout is made with a programmatical auto-layout without the interface builder (storyboard);',
+      'API requests and asynchronous fetch from News API;',
+      'Using programmatical auto-layout to animate UI components and associated controllers;',
+      'Pagination when fetching data;',
+      'Supporting pulling to refresh data;'
+    ],
     image_path: '/images/projects/NewsClientImage.jpg',
     deployed_url: 'na',
     github_url: 'https://chihhaochen.github.io/NewsClient/',
@@ -196,7 +225,19 @@ export const projects: Project[] = [
   {
     id: 3,
     name: 'News Client',
-    description: 'This backend API was deployed in DigitalOcean, and can be accessed through requests. It was built based on MongoDB, a non-SQL database, with Node.js.',
+    description: [
+      "This back-end API was deployed in DigitalOcean and could accessed through API requests. It was built based on MongoDB, a non-SQL database, with Node.js.",
+      "The authentication process covers Facebook, LINE, and email authentication presently. As for the email authentication, the developed back-end will send the user a token for users to perform operations associated with authorization.",
+      "Socket-io is employed to allow users to chat with each other once they get enrolled in the same events. Besides, the service of Amazon S3 is exploited to upload images/pictures. The back-end server does not store the photos to protect users' privacy.",
+      "Users and trainees can search the database either with the names of users or the names of events. Furthermore, users can review activities and trainers. Then a recommended list of the related activities can be offered to users."
+    ],
+    summary: [
+      'Whole layout is made with a programmatical auto-layout without the interface builder (storyboard);',
+      'API requests and asynchronous fetch from News API;',
+      'Using programmatical auto-layout to animate UI components and associated controllers;',
+      'Pagination when fetching data;',
+      'Supporting pulling to refresh data;'
+    ],
     image_path: '/images/projects/tbApiFlowChart.png',
     deployed_url: 'na',
     github_url: 'https://chihhaochen.github.io/Learch_REST_API/',
