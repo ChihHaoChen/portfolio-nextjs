@@ -3,7 +3,7 @@ import { FaServer } from 'react-icons/fa'
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
 import { MdDeveloperMode } from 'react-icons/md'
 import { BsCircleFill } from 'react-icons/bs'
-import { Education, Experience, Service, Skill } from "./types";
+import { Education, Experience, Project, Service, Skill } from "./types";
 
 export const services: Service[] = [
   {
@@ -158,5 +158,49 @@ export const education: Education[] = [
     dateTo: new Date('September, 2013'),
     location: 'London, UK',
     gpa: '3.96/4.00'
+  }
+]
+
+
+export const projects: Project[] = [
+  {
+    id: 0,
+    name: 'MyEscrow',
+    description: 'An web app for real estates escrow platform',
+    image_path: '/images/projects/myEscrow.png',
+    deployed_url: 'http://20.197.110.141/main',
+    github_url: 'na',
+    category: ['Web'],
+    tech_stack: ['React.js', 'Next.js', 'Node.js', 'Typescript', 'PostgreSQL', 'Microsoft Azure', 'Kubernetes']
+  },
+  {
+    id: 1,
+    name: 'My Portfolio - 2020 version',
+    description: 'My portfolio in 20202, deployed in GitHub. The whole portfolio has been developed with VueJS which allows me to separate the backend database in JSON format from its front-end. In addition, all the images and PDF documents are stored in AWS S3 for easier access.',
+    image_path: '/images/projects/portfolioVue.jpg',
+    deployed_url: 'https://chihhaochen.github.io/',
+    github_url: 'https://chihhaochen.github.io/portfolioVue/',
+    category: ['Web'],
+    tech_stack: ['Vue.js', 'Google Firebase', 'AWS S3']
+  },
+  {
+    id: 2,
+    name: 'News Client',
+    description: 'This app is inspired by the most udpated App Store for iOS devices. By setting proper auto-layout constraints and anchors of the components, this app is implmented without storyboard.',
+    image_path: '/images/projects/NewsClientImage.jpg',
+    deployed_url: 'na',
+    github_url: 'https://chihhaochen.github.io/NewsClient/',
+    category: ['Mobile'],
+    tech_stack: ['Swift', 'Google Firebase', 'Realm', 'UIKit']
+  },
+  {
+    id: 3,
+    name: 'News Client',
+    description: 'This backend API was deployed in DigitalOcean, and can be accessed through requests. It was built based on MongoDB, a non-SQL database, with Node.js.',
+    image_path: '/images/projects/tbApiFlowChart.png',
+    deployed_url: 'na',
+    github_url: 'https://chihhaochen.github.io/Learch_REST_API/',
+    category: ['Web'],
+    tech_stack: ['Node.js', 'MongoDB', 'Socket-io', 'AWS S3']
   }
 ]
