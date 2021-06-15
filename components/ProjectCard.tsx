@@ -112,7 +112,7 @@ const ProjectCard: FunctionComponent<{
                 summary.map((item, key) => (
                   <motion.div
                     variants={fadeInUp}
-                    className="flex flex-wrap items-center mt-5 space-x-2 text-sm tracking-wider"
+                    className="flex items-center mt-5 space-x-2 text-sm tracking-wider flex-start"
                     key={key}
                   >
                     <AiOutlineDoubleRight />

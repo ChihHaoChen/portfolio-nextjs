@@ -224,7 +224,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'News Client',
+    name: 'TrainingBuddy Back-End',
     description: [
       "This back-end API was deployed in DigitalOcean and could accessed through API requests. It was built based on MongoDB, a non-SQL database, with Node.js.",
       "The authentication process covers Facebook, LINE, and email authentication presently. As for the email authentication, the developed back-end will send the user a token for users to perform operations associated with authorization.",
@@ -232,11 +232,11 @@ export const projects: Project[] = [
       "Users and trainees can search the database either with the names of users or the names of events. Furthermore, users can review activities and trainers. Then a recommended list of the related activities can be offered to users."
     ],
     summary: [
-      'Whole layout is made with a programmatical auto-layout without the interface builder (storyboard);',
-      'API requests and asynchronous fetch from News API;',
-      'Using programmatical auto-layout to animate UI components and associated controllers;',
-      'Pagination when fetching data;',
-      'Supporting pulling to refresh data;'
+      'Authentications with Facebook, LINE, and emails are supported;',
+      'Non-SQL database MongoDB is employed for the database of users and events;',
+      'Users can only change or remove the activities created by themselves;',
+      'Chat rooms are available for the enrolled users in the same activities;',
+      'AWS S3 service is employed into the back-end for storing images for privacy.'
     ],
     image_path: '/images/projects/tbApiFlowChart.png',
     deployed_url: 'na',
