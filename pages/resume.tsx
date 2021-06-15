@@ -48,8 +48,8 @@ const resume = () => {
               <div>
                 <h5 className="my-3 text-2xl font-bold">Languages</h5>
                 <ul className="flex-wrap pl-5 my-2 list-disc">
-                  {highlySkills.map((skill, i) => (
-                    <li>{ skill.name }</li>
+                  {highlySkills.map((skill, key) => (
+                    <li key={key}>{ skill.name }</li>
                   ))}
                 </ul>
               </div>
@@ -57,8 +57,8 @@ const resume = () => {
               <div>
                 <h5 className="my-3 text-2xl font-bold">Dev. Skills</h5>
                 <ul className="flex-wrap pl-5 my-2 list-disc">
-                  {devSkills.map((tool, i) => (
-                    <li>{ tool.name }</li>
+                  {devSkills.map((tool, key) => (
+                    <li key={key}>{ tool.name }</li>
                   ))}
                 </ul>
               </div>
@@ -71,7 +71,7 @@ const resume = () => {
           {
             experiences.map((experience, key) => (
               <div key={key}>
-                <div className='flex justify-between pr-10'>
+                <div className='flex justify-between'>
                   <h5 className='my-2 text-xl font-bold'>
                     {experience.company}
                   </h5>
@@ -89,7 +89,7 @@ const resume = () => {
                 </div>
                 
                 <ul className='pl-5 list-disc'>
-                  {experience.workItems.map(workItem => <li>{ workItem }</li>)}
+                  {experience.workItems.map((workItem, key) => <li key={key}>{ workItem }</li>)}
                 </ul>
               </div>
             ))
