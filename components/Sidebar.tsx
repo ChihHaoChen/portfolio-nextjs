@@ -29,7 +29,7 @@ const Sidebar = () => {
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">Web/Mobile App Developer</p>
       
-      <a className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" href='https://portfoliopdf.s3.us-east-2.amazonaws.com/PDF/ChihHaoChen_Resume_Mar2021.pdf' download='resume_CHIH-HAO'> 
+      <a className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" href='https://portfoliopdf.s3.us-east-2.amazonaws.com/PDF/ChihHaoChen_Resume_June2021.pdf' download='resume_CHIH-HAO'> 
         <GiTie className="w-6 h-6" />Download Resume
       </a>
         { /* // social icons */}
