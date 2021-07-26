@@ -164,6 +164,23 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 0,
+    name: 'Candlestick charts',
+    description: [
+      'A web app to illustrate candlestick charts of stocks. This web app uses React.js for responsive interaction and d3.js for charts. Typescript, a superset of JavaScript, is employed during development.',
+      'This mini-app allows users to quickly glimpse the stock price of their interest, and also activates zoom and pan features by scrolling down over the chart.'
+    ],
+    summary: [
+      'React.js and d3.js for front-end;',
+      'Typescript for development;',
+    ],
+    image_path: '/images/projects/CandlestickChart.png',
+    deployed_url: 'https://candlestick-chart.vercel.app/',
+    github_url: 'https://github.com/ChihHaoChen/CandlestickChart',
+    category: ['Web'],
+    tech_stack: ['React.js', 'd3.js', 'Typescript']
+  },
+  {
+    id: 1,
     name: 'MyEscrow',
     description: [
       'A web app for real estates escrow platform. The front-end is developed with React.js for responsive interaction and Next.js for multi-language support. The UI/UX is based on the popular content management system - Monday.com.',
@@ -184,7 +201,7 @@ export const projects: Project[] = [
     tech_stack: ['React.js', 'Next.js', 'Node.js', 'Typescript', 'PostgreSQL', 'Microsoft Azure', 'Kubernetes']
   },
   {
-    id: 1,
+    id: 2,
     name: 'My Portfolio - 2020 version',
     description: [
       "This project is developed mainly with Vue.js. The generated static HTML files are deployed in GitHub. My initial purpose in building this website with JS is to separate the front-end development from the back-end database. Thus anyone can reuse my repository to build up their portfolio website by configuring their API calls and populating their back-end database.", 
@@ -203,7 +220,7 @@ export const projects: Project[] = [
     tech_stack: ['Vue.js', 'Google Firebase', 'AWS S3']
   },
   {
-    id: 2,
+    id: 3,
     name: 'News Client',
     description: [
       "The original purpose of this project is to extend the previous work on a mockup of Apple abpp Store. This App makes API requests from News API that offers news articles and headlines from over 30000 sources. Therefore the reason I chose this topic is that not only can I hone my skills in iOS application development but keep a close eye to the things around the world.",
@@ -223,7 +240,7 @@ export const projects: Project[] = [
     tech_stack: ['Swift', 'Google Firebase', 'Realm', 'UIKit']
   },
   {
-    id: 3,
+    id: 4,
     name: 'TrainingBuddy Back-End',
     description: [
       "This back-end API was deployed in DigitalOcean and could accessed through API requests. It was built based on MongoDB, a non-SQL database, with Node.js.",
