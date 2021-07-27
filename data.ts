@@ -164,7 +164,7 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 0,
-    name: 'Candlestick charts',
+    name: 'Candlestick Charts',
     description: [
       'A web app to illustrate candlestick charts of stocks. This web app uses React.js for responsive interaction and d3.js for charts. Typescript, a superset of JavaScript, is employed during development.',
       'This mini-app allows users to quickly glimpse the stock price of their interest, and also activates zoom and pan features by scrolling down over the chart.'
