@@ -12,8 +12,6 @@ import ServiceCard from '../components/ServiceCard'
 import { fadeInUp, routeFade, stagger } from '../animations'
 
 const landing = ({ BASE_URL }) => {
-  console.log('Client Side =>', BASE_URL)
-
   return (
     <motion.div
       className="flex flex-col flex-grow px-6 pt-1 "
