@@ -15,14 +15,12 @@ const Navbar = () => {
   }> = ({ activeItem, setActiveItem, name, route }) => {
     return activeItem !== name ? (
       <Link href={route}>
-        <a>
-          <span
-            className="hover:text-orange"
-            onClick={() => setActiveItem(name)}
-          >
-            {name}
-          </span>
-        </a>
+        <span
+          className="hover:text-orange"
+          onClick={() => setActiveItem(name)}
+        >
+          {name}
+        </span>
       </Link>
     ) : null
   }
