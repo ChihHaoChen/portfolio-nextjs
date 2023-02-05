@@ -38,12 +38,13 @@ const ProjectCard: FunctionComponent<{
         width="320"
         height="180"
         src={image_path}
-        layout="responsive"
         alt={name}
         onClick={() => setShowDetail(id)}
-        className="overflow-hidden rounded-md cursor-pointer"
-        quality={10}
+        className="w-full overflow-hidden rounded-md cursor-pointer"
+        quality={100}
         placeholder="blur"
+        priority={true}
+        unoptimized={true}
         blurDataURL={`/_next/image?url=${image_path}&w=16&q=1`}
       />
 
