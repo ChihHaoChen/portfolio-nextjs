@@ -296,7 +296,7 @@ export const projects: Project[] = [
       `Dashboard feature for CirrusLED's clients to monitor their installed LED infrastrucuture including mechanical and electrical malfunctions`,
     ],
     summary: ['React.js and Typescript for front-end development;'],
-    image_path: '/images/projects/ScreenHub.png',
+    image_path: '/images/projects/ScreenHub.jpg',
     deployed_url: 'https://v2.screenhub.com/',
     github_url: 'na',
     category: ['Web'],
@@ -319,14 +319,14 @@ export const projects: Project[] = [
       'React.js, HTML5 canvas for front-end;',
       'Typescript for development;',
     ],
-    image_path: '/images/projects/FinlogixChart.png',
+    image_path: '/images/projects/FinlogixChart.jpg',
     deployed_url: 'https://www.finlogix.com/chart',
     github_url: 'na',
     category: ['Web'],
     tech_stack: ['React.js', 'Typescript', 'HTML5'],
   },
   {
-    id: 2,
+    id: 4,
     name: 'My Portfolio - 2020 version',
     description: [
       'This project is developed mainly with Vue.js. The generated static HTML files are deployed in GitHub. My initial purpose in building this website with JS is to separate the front-end development from the back-end database. Thus anyone can reuse my repository to build up their portfolio website by configuring their API calls and populating their back-end database.',
@@ -345,7 +345,7 @@ export const projects: Project[] = [
     tech_stack: ['Vue.js', 'Google Firebase', 'AWS S3'],
   },
   {
-    id: 3,
+    id: 5,
     name: 'News Client',
     description: [
       'The original purpose of this project is to extend the previous work on a mockup of Apple abpp Store. This App makes API requests from News API that offers news articles and headlines from over 30000 sources. Therefore the reason I chose this topic is that not only can I hone my skills in iOS application development but keep a close eye to the things around the world.',

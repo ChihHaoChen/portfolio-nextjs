@@ -35,8 +35,8 @@ const ProjectCard: FunctionComponent<{
   return (
     <>
       <Image
-        width="300"
-        height="150"
+        width="320"
+        height="180"
         src={image_path}
         layout="responsive"
         alt={name}
