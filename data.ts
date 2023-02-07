@@ -260,10 +260,63 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 0,
+    name: 'Japan Love Booking Web App',
+    description: [
+      `A web app allows customers to book their travels online;`,
+      `Integration of coupons and affiliate marketing.`,
+    ],
+    summary: [
+      'React.js and Typescript for front-end development; CMS web service hosted with Strapi and its plugins; Payment and authentication service developed with Go; Deployed in AWS EKS',
+    ],
+    image_path: '/images/projects/japanlove.jpg',
+    deployed_url: 'https://dev.japanlove.co/',
+    github_url: 'na',
+    category: ['Web'],
+    tech_stack: [
+      'React.js',
+      'Typescript',
+      'Node.js',
+      'PostgreSQL',
+      'Go',
+      'EKS',
+    ],
+  },
+  {
+    id: 1,
+    name: 'JStyleHokkaido Ski Tour Website',
+    description: [
+      `The booking website for ski lessons;`,
+      `It uses Wordpress store its populated data, and host the frontend web pages.`,
+    ],
+    summary: ['Wordpress and react for front-end plugin;'],
+    image_path: '/images/projects/ski-tour.jpg',
+    deployed_url: 'https://j-styletour.com/ski-school/',
+    github_url: 'na',
+    category: ['Web'],
+    tech_stack: ['React.js', 'Wordpress'],
+  },
+  {
+    id: 2,
+    name: 'JStyle Hokkaido Official Website',
+    description: [
+      `The official website for JStyle Hokkaido;`,
+      `A client form to store clients' info for contact`,
+    ],
+    summary: [
+      `React.js and Typescript for front-end development; MongoDB to store clients' information`,
+    ],
+    image_path: '/images/projects/jstylehokkaido.jpg',
+    deployed_url: 'https://www.jstylehokkaido.co.jp/',
+    github_url: 'na',
+    category: ['Web'],
+    tech_stack: ['React.js', 'Typescript', 'MongoDB'],
+  },
+  {
+    id: 3,
     name: 'VestaEquity Web3 Platform',
     description: [
-      `A web app allows its clients to purchase tokenized equity in Algorand ecosystem`,
-      `Clients can send offers, counter-offers, or reject offers with their own wallets`,
+      `A web app allows its clients to purchase tokenized equity in Algorand ecosystem;`,
+      `Clients can send offers, counter-offers, or reject offers with their own wallets.`,
     ],
     summary: [
       'React.js and Typescript for front-end development; Django for its back-end system',
@@ -275,11 +328,11 @@ export const projects: Project[] = [
     tech_stack: ['React.js', 'Typescript', 'PostgreSQL', 'Django'],
   },
   {
-    id: 1,
+    id: 4,
     name: 'VestaEquity CMS Website',
     description: [
-      `A web app allows CirrusLED's clients to update their ads and content displayed in LED monitors`,
-      `Dashboard feature for CirrusLED's clients to monitor their installed LED infrastrucuture including mechanical and electrical malfunctions`,
+      `The official website of VestaEquity for marketing campaign and introduction;`,
+      `It uses HubSpot CRM platform to store its populated data, and to host the frontend web pages.`,
     ],
     summary: ['React.js and Typescript for front-end development;'],
     image_path: '/images/projects/vesta-cms.jpg',
@@ -289,11 +342,11 @@ export const projects: Project[] = [
     tech_stack: ['React.js', 'Typescript'],
   },
   {
-    id: 2,
+    id: 5,
     name: 'CirrusLED ScreenHub',
     description: [
-      `A web app allows CirrusLED's clients to update their ads and content displayed in LED monitors`,
-      `Dashboard feature for CirrusLED's clients to monitor their installed LED infrastrucuture including mechanical and electrical malfunctions`,
+      `A web app allows CirrusLED's clients to update their ads and content displayed in LED monitors;`,
+      `Dashboard feature for CirrusLED's clients to monitor their installed LED infrastrucuture including mechanical and electrical malfunctions.`,
     ],
     summary: ['React.js and Typescript for front-end development;'],
     image_path: '/images/projects/ScreenHub.jpg',
@@ -309,10 +362,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     name: 'Finlogix Charts',
     description: [
-      'A HTML5 web app to illustrate candlestick charts of stocks and to apply technical analysis tools. This web frontend is developed with React.js and typescript.',
+      'A HTML5 web app to illustrate candlestick charts of stocks and to apply technical analysis tools. This web frontend is developed with React.js and typescript;',
       'This mini-app allows users to quickly glimpse the stock price of their interest, and also activates zoom and pan features by scrolling down over the chart.',
     ],
     summary: [
@@ -326,7 +379,7 @@ export const projects: Project[] = [
     tech_stack: ['React.js', 'Typescript', 'HTML5'],
   },
   {
-    id: 4,
+    id: 7,
     name: 'My Portfolio - 2020 version',
     description: [
       'This project is developed mainly with Vue.js. The generated static HTML files are deployed in GitHub. My initial purpose in building this website with JS is to separate the front-end development from the back-end database. Thus anyone can reuse my repository to build up their portfolio website by configuring their API calls and populating their back-end database.',
@@ -345,7 +398,7 @@ export const projects: Project[] = [
     tech_stack: ['Vue.js', 'Google Firebase', 'AWS S3'],
   },
   {
-    id: 5,
+    id: 8,
     name: 'News Client',
     description: [
       'The original purpose of this project is to extend the previous work on a mockup of Apple abpp Store. This App makes API requests from News API that offers news articles and headlines from over 30000 sources. Therefore the reason I chose this topic is that not only can I hone my skills in iOS application development but keep a close eye to the things around the world.',
