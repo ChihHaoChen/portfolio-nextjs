@@ -52,7 +52,7 @@ const ProjectCard: FunctionComponent<{
       {/* //step 1 */}
 
       {showDetail === id && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-full p-2 text-black bg-gray-100 rounded-md md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12">
+        <div className="absolute top-0 left-0 z-10 grid w-full p-2 text-black bg-gray-100 rounded-md h-max md:h-full md:p-10 dark:bg-black-100 dark:text-gray-100 md:grid-cols-2 gap-x-12">
           <motion.div
             variants={stagger}
             initial="initial"
